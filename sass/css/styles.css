@@ -1,0 +1,31 @@
+.header-wrapper {
+  padding: 1rem;
+}
+.header-wrapper .menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.header-wrapper .menu .nav-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.header-wrapper .menu .nav-bar .option-menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 1rem;
+}
+.header-wrapper .menu .nav-bar .option-menu .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.header-wrapper .menu .nav-bar .option-menu .option {
+  text-align: center;
+  list-style: none;
+}
+
+/*# sourceMappingURL=styles.css.map */

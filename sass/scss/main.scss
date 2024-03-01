@@ -1,0 +1,31 @@
+.header-wrapper{
+    padding: 1rem;
+    .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        .nav-bar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            .option-menu{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                gap: 1rem;
+                .logo{
+                    img{
+                        width: 100px;
+                        height: 100px;
+                        border-radius: 50%;
+                    }
+                }
+                .option{
+                    text-align: center;
+                    list-style: none;
+                }
+            }
+        }
+    }
+}
