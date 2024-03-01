@@ -1,5 +1,4 @@
 .header-wrapper {
-  padding: 1rem;
   width: 100%;
   height: 750px;
   background-image: url("../../assest/images/modelos-ropa4.jpg");
@@ -43,6 +42,32 @@
 .header-wrapper .menu .nav-bar .option-menu .option {
   text-align: center;
   list-style: none;
+}
+.header-wrapper .menu .nav-bar .option-menu .option a {
+  text-decoration: none;
+  color: rgb(0, 0, 0);
+}
+.header-wrapper .menu .nav-bar .option-menu .option a:hover {
+  text-decoration: underline;
+}
+
+.ultimos-productos {
+  display: flex;
+  flex-direction: column;
+}
+.ultimos-productos .section-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.ultimos-productos .card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+}
+.ultimos-productos .card-container .card .card-img img {
+  width: 100%;
+  height: 100%;
 }
 
 /*# sourceMappingURL=styles.css.map */
