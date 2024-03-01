@@ -13,13 +13,19 @@
             text-align: center;
         }
     }
+    .fixed{
+        position: fixed;
+        z-index: 1;
+        background-color: white;
+        box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+    }
     .menu{
         display: flex;
         flex-direction: row;
         justify-content: space-around;
         align-items: center;
         width: 100%;
-        //padding: 1rem;
+        padding: 1rem;
         .nav-bar{
             .option-menu{
                 display: flex;

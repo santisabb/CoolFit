@@ -4,11 +4,12 @@ let scrollPosition = 0
 let flag = false
 
 function scrollEvent(sp){
-    if(sp > 600) {
+    if(sp >= 600) {
+        menuHeader.classList.add('fixed')
         containerHeader.style.padding = 0
-        menuHeader.style.position =  'fixed'
-        menuHeader.style.zIndex = 1
-        menuHeader.style.backgroundColor = 'white'
+    }
+    if(sp <= 150 && flag) {
+        menuHeader.classList.remove('fixed')
     }
 }
 
