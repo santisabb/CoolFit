@@ -17,6 +17,9 @@
         z-index: 1;
         background-color: white;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+        #nav-header-link{
+            color: black;
+        }
     }
     .menu{
         display: flex;
@@ -44,7 +47,7 @@
                     list-style: none;
                     a{
                         text-decoration: none;
-                        color: rgb(0, 0, 0);
+                        color: rgb(255, 255, 255);
                         &:hover{
                             text-decoration: underline;
                         }

@@ -1,3 +1,8 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .header-wrapper {
   width: 100%;
   height: 750px;
@@ -18,6 +23,9 @@
   z-index: 1;
   background-color: white;
   box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
+}
+.header-wrapper .fixed #nav-header-link {
+  color: black;
 }
 .header-wrapper .menu {
   display: flex;
@@ -45,29 +53,65 @@
 }
 .header-wrapper .menu .nav-bar .option-menu .option a {
   text-decoration: none;
-  color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
 }
 .header-wrapper .menu .nav-bar .option-menu .option a:hover {
   text-decoration: underline;
 }
 
-.ultimos-productos {
+main .ultimos-productos {
+  padding: 1rem;
   display: flex;
   flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  margin: 0 auto;
 }
-.ultimos-productos .section-header {
+main .ultimos-productos .section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.ultimos-productos .card-container {
+main .ultimos-productos .card-container {
   display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
 }
-.ultimos-productos .card-container .card .card-img img {
+main .ultimos-productos .card-container .card {
+  border-style: none;
+  margin-right: 1rem;
+}
+main .ultimos-productos .card-container .card:hover {
+  transform: scale(1.2, 1.2);
+  transition: 0.5s;
+}
+main .ultimos-productos .card-container .card:hover .info-producto .link-producto {
+  visibility: visible;
+}
+main .ultimos-productos .card-container .card .card-img img {
+  width: 280px;
+  height: 280px;
+}
+main .ultimos-productos .card-container .card .info-producto {
   width: 100%;
-  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+}
+main .ultimos-productos .card-container .card .info-producto .precio-producto p {
+  margin-bottom: 0;
+}
+main .ultimos-productos .card-container .card .info-producto .link-producto {
+  visibility: hidden;
+  width: 100%;
+  margin-bottom: 20px;
+}
+main .ultimos-productos .card-container .card .info-producto .link-producto a {
+  text-decoration: none;
+  color: black;
+}
+main .ultimos-productos .card-container .card .info-producto .link-producto a:hover {
+  color: blue;
 }
 
 /*# sourceMappingURL=styles.css.map */

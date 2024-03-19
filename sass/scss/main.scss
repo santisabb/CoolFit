@@ -1,25 +1,11 @@
+//BASE
+//Reset
+@import 'partials/base/reset';
+
+
+
+
 //Header
 @import 'partials/components/header';
-
-.ultimos-productos{
-    display: flex;
-    flex-direction: column;
-    .section-header{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .card-container{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-evenly;
-        .card{
-            .card-img{
-                img{
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-        }
-    }
-}
+//Index
+@import 'partials/components/index';
