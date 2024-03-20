@@ -59,4 +59,57 @@ main{
             }
         }
     }
+    .categorias{
+        height: 1000px;
+        .cat-container{
+            margin: 0 auto;
+            height: 100%;
+            width: 70%;
+            display: grid;
+            grid-template-areas: 
+            'head head head'
+            'buzos buzos remeras'
+            'buzos buzos remeras'
+            'buzos buzos gorros'
+            'buzos buzos gorros';
+            .section-header{
+                grid-area: head;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+                margin-bottom: 30px;
+            }
+            .cat1{
+                grid-area: buzos;
+                margin-right: 20px;
+                background-image: url(../../../../assest/images/buzo3.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .cat2{
+                grid-area: remeras;
+                margin-bottom: 10px;
+                background-image: url(../../../../assest/images/remeras1.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+                background-position: center;
+            }
+            .cat3{
+                grid-area: gorros;
+                margin-top: 10px;
+                background-image: url(../../../../assest/images/gorras2.jpg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .cat-info{
+                position: relative;
+                top: 40px;
+                left: 20px;
+                background-color: #fff;
+                font-size: 1.5em;
+                padding: 1rem;
+            }
+        }
+    }
 }
