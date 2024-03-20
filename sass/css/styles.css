@@ -59,67 +59,87 @@
   text-decoration: underline;
 }
 
-main .ultimos-productos {
+.links, .links .options {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+.links .options {
+  width: 100%;
+  list-style: none;
+  padding-left: 0;
+  margin-bottom: 0;
+}
+.links .options .social-media-logo {
+  font-size: 1.5em;
+  padding: 1rem;
+}
+
+main .productos {
   padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
+  width: 1200px;
   margin: 0 auto;
 }
-main .ultimos-productos .section-header {
+main .productos .section-header {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-main .ultimos-productos .card-container {
+main .productos .card-container {
   display: flex;
 }
-main .ultimos-productos .card-container .card {
+main .productos .card-container .card {
   border-style: none;
   margin-right: 1rem;
 }
-main .ultimos-productos .card-container .card:hover {
+main .productos .card-container .card:hover {
   transform: scale(1.2, 1.2);
   transition: 0.5s;
 }
-main .ultimos-productos .card-container .card:hover .info-producto .link-producto {
+main .productos .card-container .card:hover .info-producto .link-producto {
   visibility: visible;
 }
-main .ultimos-productos .card-container .card .card-img img {
+main .productos .card-container .card .card-img img {
   width: 280px;
   height: 280px;
 }
-main .ultimos-productos .card-container .card .info-producto {
+main .productos .card-container .card .info-producto {
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: start;
   justify-content: center;
 }
-main .ultimos-productos .card-container .card .info-producto .precio-producto p {
+main .productos .card-container .card .info-producto .precio-producto p {
   margin-bottom: 0;
 }
-main .ultimos-productos .card-container .card .info-producto .link-producto {
+main .productos .card-container .card .info-producto .link-producto {
   visibility: hidden;
   width: 100%;
   margin-bottom: 20px;
 }
-main .ultimos-productos .card-container .card .info-producto .link-producto a {
+main .productos .card-container .card .info-producto .link-producto a {
   text-decoration: none;
   color: black;
 }
-main .ultimos-productos .card-container .card .info-producto .link-producto a:hover {
+main .productos .card-container .card .info-producto .link-producto a:hover {
   color: blue;
 }
 main .categorias {
   height: 1000px;
+  width: 1050px;
+  margin: 0 auto;
+  margin-bottom: 4rem;
 }
 main .categorias .cat-container {
-  margin: 0 auto;
   height: 100%;
-  width: 70%;
+  width: 100%;
   display: grid;
   grid-template-areas: "head head head" "buzos buzos remeras" "buzos buzos remeras" "buzos buzos gorros" "buzos buzos gorros";
 }
@@ -133,25 +153,48 @@ main .categorias .cat-container .section-header {
 }
 main .categorias .cat-container .cat1 {
   grid-area: buzos;
+  text-decoration: none;
+  color: #000;
   margin-right: 20px;
   background-image: url(../../../../assest/images/buzo3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
 }
+main .categorias .cat-container .cat1:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+main .categorias .cat-container .cat1 .info-extra {
+  position: relative;
+  margin-left: 150px;
+  top: 300px;
+}
 main .categorias .cat-container .cat2 {
   grid-area: remeras;
+  text-decoration: none;
+  color: #000;
   margin-bottom: 10px;
   background-image: url(../../../../assest/images/remeras1.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
 }
+main .categorias .cat-container .cat2:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
 main .categorias .cat-container .cat3 {
   grid-area: gorros;
+  text-decoration: none;
+  color: #000;
   margin-top: 10px;
   background-image: url(../../../../assest/images/gorras2.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+}
+main .categorias .cat-container .cat3:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
 }
 main .categorias .cat-container .cat-info {
   position: relative;
@@ -160,6 +203,12 @@ main .categorias .cat-container .cat-info {
   background-color: #fff;
   font-size: 1.5em;
   padding: 1rem;
+}
+main .categorias .cat-container .info-extra {
+  display: inline;
+  position: relative;
+  top: 150px;
+  color: #fff;
 }
 
 /*# sourceMappingURL=styles.css.map */
