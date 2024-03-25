@@ -1,8 +1,5 @@
 .links{
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
+    @include flex(row, center, center);
     margin-top: 3rem;
     .options{
         @extend .links;

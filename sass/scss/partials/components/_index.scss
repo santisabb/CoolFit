@@ -1,16 +1,11 @@
 main{
     .productos{
         padding: 1rem;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: space-around;
+        @include flex(column, space-around, center);
         width: 1200px;
         margin: 0 auto;
         .section-header{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            @include flex(column, unset, center);
         }
         .card-container{
             display: flex;
@@ -34,10 +29,7 @@ main{
                 }
                 .info-producto{
                     width: 100%;
-                    display: flex;
-                    flex-direction: column;
-                    align-items: start;
-                    justify-content: center;
+                    @include flex(column, center, start);
                     .precio-producto{
                         p{
                             margin-bottom: 0;
@@ -76,10 +68,7 @@ main{
             'buzos buzos gorros';
             .section-header{
                 grid-area: head;
-                display: flex;
-                flex-direction: column;
-                align-items: center;
-                justify-content: center;
+                @include flex(column, center, center);
                 margin-bottom: 30px;
             }
             .cat1{
@@ -87,41 +76,47 @@ main{
                 text-decoration: none;
                 color: #000;
                 margin-right: 20px;
-                background-image: url(../../../../assest/images/buzo3.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
+                @include background-img(url(../../../../assest/images/buzo3.jpg), no-repeat, cover, center);
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;
                 }
                 .info-extra{
                     position: relative;
-                    margin-left: 150px;
+                    left: 100px;
                     top: 300px;
                 }
             }
             .cat2{
                 grid-area: remeras;
-                text-decoration: none;
-                color: #000;
                 margin-bottom: 10px;
                 background-image: url(../../../../assest/images/remeras1.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
-                background-position: center;
+                // text-decoration: none;
+                // color: #000;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position:center center;
+                @extend .cat1;
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;
                 }
+                .info-extra{
+                    position: relative;
+                    left: 30px;
+                    top: 150px;
+                }
             }
             .cat3{
                 grid-area: gorros;
-                text-decoration: none;
-                color: #000;
                 margin-top: 10px;
                 background-image: url(../../../../assest/images/gorras2.jpg);
-                background-repeat: no-repeat;
-                background-size: cover;
+                // text-decoration: none;
+                // color: #000;
+                // background-repeat: no-repeat;
+                // background-size: cover;
+                // background-position:center center;
+                @extend .cat2;
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;

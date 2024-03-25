@@ -1,0 +1,27 @@
+//MIXINS
+//mixin para aplicar flex-box
+@mixin flex($direction, $justify, $align){
+    display: flex;
+    justify-content: $justify;
+    align-items: $align;
+    flex-direction: $direction;
+}
+//mixin para aplicar background-img
+@mixin background-img($url, $repeat, $size, $position){
+    background-image: $url;
+    background-repeat: $repeat;
+    background-size: $size;
+    background-position: $position;
+}
+//mixin para breakpoint en 900px de ancho
+@mixin tablet{
+    @media screen and (max-width:900px) {
+        @content;
+    }
+}
+//mixin para breakpoint en 520px de ancho
+@mixin mobile{
+    @media screen and (max-width:520px) {
+        @content;
+    }
+}

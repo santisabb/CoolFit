@@ -27,19 +27,22 @@
 .header-wrapper .fixed #nav-header-link {
   color: black;
 }
+.header-wrapper .fixed .carrito {
+  color: black;
+}
 .header-wrapper .menu {
   display: flex;
-  flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  flex-direction: row;
   width: 100%;
   padding: 1rem;
 }
 .header-wrapper .menu .nav-bar .option-menu {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   gap: 1rem;
 }
 .header-wrapper .menu .nav-bar .option-menu .logo img {
@@ -58,12 +61,19 @@
 .header-wrapper .menu .nav-bar .option-menu .option a:hover {
   text-decoration: underline;
 }
+.header-wrapper .menu .carrito .boton-carrito {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  color: white;
+}
 
 .links, .links .options {
   display: flex;
-  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-direction: row;
   margin-top: 3rem;
 }
 .links .options {
@@ -80,16 +90,17 @@
 main .productos {
   padding: 1rem;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: space-around;
+  align-items: center;
+  flex-direction: column;
   width: 1200px;
   margin: 0 auto;
 }
 main .productos .section-header {
   display: flex;
-  flex-direction: column;
+  justify-content: unset;
   align-items: center;
+  flex-direction: column;
 }
 main .productos .card-container {
   display: flex;
@@ -112,9 +123,9 @@ main .productos .card-container .card .card-img img {
 main .productos .card-container .card .info-producto {
   width: 100%;
   display: flex;
-  flex-direction: column;
-  align-items: start;
   justify-content: center;
+  align-items: start;
+  flex-direction: column;
 }
 main .productos .card-container .card .info-producto .precio-producto p {
   margin-bottom: 0;
@@ -146,12 +157,12 @@ main .categorias .cat-container {
 main .categorias .cat-container .section-header {
   grid-area: head;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
+  align-items: center;
+  flex-direction: column;
   margin-bottom: 30px;
 }
-main .categorias .cat-container .cat1 {
+main .categorias .cat-container .cat1, main .categorias .cat-container .cat2, main .categorias .cat-container .cat3 {
   grid-area: buzos;
   text-decoration: none;
   color: #000;
@@ -159,38 +170,35 @@ main .categorias .cat-container .cat1 {
   background-image: url(../../../../assest/images/buzo3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-}
-main .categorias .cat-container .cat1:hover {
-  transform: scale(1.1, 1.1);
-  transition: 0.5s;
-}
-main .categorias .cat-container .cat1 .info-extra {
-  position: relative;
-  margin-left: 150px;
-  top: 300px;
-}
-main .categorias .cat-container .cat2 {
-  grid-area: remeras;
-  text-decoration: none;
-  color: #000;
-  margin-bottom: 10px;
-  background-image: url(../../../../assest/images/remeras1.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
   background-position: center;
 }
-main .categorias .cat-container .cat2:hover {
+main .categorias .cat-container .cat1:hover, main .categorias .cat-container .cat2:hover, main .categorias .cat-container .cat3:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
+}
+main .categorias .cat-container .cat1 .info-extra, main .categorias .cat-container .cat2 .info-extra, main .categorias .cat-container .cat3 .info-extra {
+  position: relative;
+  left: 100px;
+  top: 300px;
+}
+main .categorias .cat-container .cat2, main .categorias .cat-container .cat3 {
+  grid-area: remeras;
+  margin-bottom: 10px;
+  background-image: url(../../../../assest/images/remeras1.jpg);
+}
+main .categorias .cat-container .cat2:hover, main .categorias .cat-container .cat3:hover {
+  transform: scale(1.1, 1.1);
+  transition: 0.5s;
+}
+main .categorias .cat-container .cat2 .info-extra, main .categorias .cat-container .cat3 .info-extra {
+  position: relative;
+  left: 30px;
+  top: 150px;
 }
 main .categorias .cat-container .cat3 {
   grid-area: gorros;
-  text-decoration: none;
-  color: #000;
   margin-top: 10px;
   background-image: url(../../../../assest/images/gorras2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 main .categorias .cat-container .cat3:hover {
   transform: scale(1.1, 1.1);
