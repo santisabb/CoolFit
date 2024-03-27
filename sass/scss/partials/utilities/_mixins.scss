@@ -13,6 +13,11 @@
     background-size: $size;
     background-position: $position;
 }
+//mixin para tamaño de imagenes
+@mixin img-size-card($alto, $ancho){
+    height: $alto;
+    width: $ancho;
+}
 //mixin para breakpoint en 900px de ancho
 @mixin tablet{
     @media screen and (max-width:900px) {

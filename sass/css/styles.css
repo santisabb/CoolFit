@@ -61,12 +61,25 @@
 .header-wrapper .menu .nav-bar .option-menu .option a:hover {
   text-decoration: underline;
 }
-.header-wrapper .menu .carrito .boton-carrito {
+.header-wrapper .menu .nav-tools .tools-list {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 0;
+  gap: 1rem;
+}
+.header-wrapper .menu .nav-tools .tools-list .carrito .boton-carrito {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
   color: white;
+}
+.header-wrapper .menu .nav-tools .tools-list .boton-dark-mode .dark-mode-logo {
+  background: none;
+  border-style: none;
 }
 
 .links, .links .options {
@@ -117,8 +130,8 @@ main .productos .card-container .card:hover .info-producto .link-producto {
   visibility: visible;
 }
 main .productos .card-container .card .card-img img {
-  width: 280px;
   height: 280px;
+  width: 280px;
 }
 main .productos .card-container .card .info-producto {
   width: 100%;

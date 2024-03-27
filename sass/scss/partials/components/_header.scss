@@ -38,7 +38,7 @@
                 }
                 .option{
                     text-align: center;
-                    list-style: none;
+                    list-style: $list-style;
                     a{
                         text-decoration: none;
                         color: rgb(255, 255, 255);
@@ -49,10 +49,24 @@
                 }
             }
         }
-        .carrito{
-            .boton-carrito{
-                @include flex (row, center ,center);
-                color: white;
+        .nav-tools{
+            .tools-list{
+                list-style: $list-style;
+                @include flex(row, center, center);
+                padding-left: 0;
+                gap: 1rem;
+                .carrito{
+                    .boton-carrito{
+                        @include flex (row, center ,center);
+                        color: white;
+                    }
+                }
+                .boton-dark-mode{
+                    .dark-mode-logo{
+                        background: none;
+                        border-style: none;
+                    }
+                }
             }
         }
     }

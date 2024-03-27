@@ -23,8 +23,7 @@ main{
                 }
                 .card-img{
                     img{
-                        width: 280px;
-                        height: 280px;
+                        @include img-size-card(280px, 280px);
                     }
                 }
                 .info-producto{
@@ -91,11 +90,6 @@ main{
                 grid-area: remeras;
                 margin-bottom: 10px;
                 background-image: url(../../../../assest/images/remeras1.jpg);
-                // text-decoration: none;
-                // color: #000;
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // background-position:center center;
                 @extend .cat1;
                 &:hover{
                     transform: scale(1.1,1.1);
@@ -111,11 +105,6 @@ main{
                 grid-area: gorros;
                 margin-top: 10px;
                 background-image: url(../../../../assest/images/gorras2.jpg);
-                // text-decoration: none;
-                // color: #000;
-                // background-repeat: no-repeat;
-                // background-size: cover;
-                // background-position:center center;
                 @extend .cat2;
                 &:hover{
                     transform: scale(1.1,1.1);
