@@ -75,7 +75,7 @@ main{
                 text-decoration: none;
                 color: #000;
                 margin-right: 20px;
-                @include background-img(url('../../../../assest/images/buzo3.jpg'), no-repeat, cover, center);
+                @include background-img(url('../../assest/images/buzo3.jpg'), no-repeat, cover, center);
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;
@@ -89,7 +89,7 @@ main{
             .cat2{
                 grid-area: remeras;
                 margin-bottom: 10px;
-                background-image: url('../../../../assest/images/remeras1.jpg');
+                background-image: url('../../assest/images/remeras1.jpg');
                 //@extend .cat1;
                 &:hover{
                     transform: scale(1.1,1.1);
@@ -104,7 +104,7 @@ main{
             .cat3{
                 grid-area: gorros;
                 margin-top: 10px;
-                background-image: url('../../../../assest/images/gorras2.jpg');
+                background-image: url('../../assest/images/gorras2.jpg');
                 //@extend .cat2;
                 &:hover{
                     transform: scale(1.1,1.1);
