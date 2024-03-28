@@ -181,6 +181,7 @@ main .categorias .cat-container .cat1 {
   color: #000;
   margin-right: 20px;
   background-image: url("../../assest/images/buzo3.jpg");
+  background-image: url("../../assest/images/buzo3.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -198,6 +199,7 @@ main .categorias .cat-container .cat2 {
   grid-area: remeras;
   margin-bottom: 10px;
   background-image: url("../../assest/images/remeras1.jpg");
+  background-image: url("../../assest/images/remeras1.jpg");
 }
 main .categorias .cat-container .cat2:hover {
   transform: scale(1.1, 1.1);
@@ -211,6 +213,8 @@ main .categorias .cat-container .cat2 .info-extra {
 main .categorias .cat-container .cat3 {
   grid-area: gorros;
   margin-top: 10px;
+  margin-bottom: 0;
+  background-image: url("../../assest/images/gorras2.jpg");
   background-image: url("../../assest/images/gorras2.jpg");
 }
 main .categorias .cat-container .cat3:hover {

@@ -90,7 +90,7 @@ main{
                 grid-area: remeras;
                 margin-bottom: 10px;
                 background-image: url('../../assest/images/remeras1.jpg');
-                //@extend .cat1;
+                @extend .cat1;
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;
@@ -104,8 +104,9 @@ main{
             .cat3{
                 grid-area: gorros;
                 margin-top: 10px;
+                margin-bottom: 0;
                 background-image: url('../../assest/images/gorras2.jpg');
-                //@extend .cat2;
+                @extend .cat2;
                 &:hover{
                     transform: scale(1.1,1.1);
                     transition: 0.5s;
