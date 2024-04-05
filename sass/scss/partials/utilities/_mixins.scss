@@ -18,6 +18,12 @@
     height: $alto;
     width: $ancho;
 }
+//mixin para breakpoint en 1200px de ancho
+@mixin width1200{
+    @media  screen and (max-width:1200px) {
+        @content;
+    }
+}
 //mixin para breakpoint en 900px de ancho
 @mixin tablet{
     @media screen and (max-width:900px) {
