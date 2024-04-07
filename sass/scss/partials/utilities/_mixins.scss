@@ -30,9 +30,9 @@
         @content;
     }
 }
-//mixin para breakpoint en 520px de ancho
+//mixin para breakpoint en 640px de ancho
 @mixin mobile{
-    @media screen and (max-width:520px) {
+    @media screen and (max-width:640px) {
         @content;
     }
 }

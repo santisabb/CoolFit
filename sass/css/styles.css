@@ -28,7 +28,7 @@
 .header-wrapper .fixed #nav-header-link {
   color: black;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .header-wrapper .fixed #nav-header-link {
     color: white;
   }
@@ -52,7 +52,7 @@
 .header-wrapper .menu .open-menu {
   display: none;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .header-wrapper .menu .open-menu {
     display: block;
     border: 0;
@@ -65,7 +65,7 @@
   opacity: 1;
   visibility: visible;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .header-wrapper .menu .nav-bar {
     visibility: hidden;
     position: fixed;
@@ -86,7 +86,7 @@
 .header-wrapper .menu .nav-bar .close-menu {
   display: none;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .header-wrapper .menu .nav-bar .close-menu {
     display: block;
     border: 0;
@@ -102,7 +102,7 @@
   flex-direction: row;
   gap: 1rem;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   .header-wrapper .menu .nav-bar .option-menu {
     display: flex;
     justify-content: center;
@@ -171,6 +171,27 @@
   text-align: center;
 }
 
+main .dark-mode {
+  background-color: #000;
+}
+main .dark-mode p {
+  color: white;
+}
+main .dark-mode h3 {
+  color: white;
+}
+main .dark-mode h4 {
+  color: white;
+}
+main .dark-mode .card-container .card {
+  background-color: #000;
+}
+main .dark-mode .card-container .card .info-producto .link-producto a {
+  color: #fff;
+}
+main .dark-mode .card-container .card .info-producto .link-producto a:hover {
+  color: chartreuse;
+}
 main .card-container {
   display: flex;
   justify-content: space-around;
@@ -184,7 +205,7 @@ main .card-container .card {
   border-style: none;
   margin-right: 1rem;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   main .card-container .card {
     width: 80%;
     margin: 0 auto;
@@ -242,7 +263,7 @@ main .cat-container {
     margin: 0 auto;
   }
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   main .cat-container {
     display: flex;
     justify-content: center;
@@ -263,7 +284,7 @@ main .cat-container .cat1, main .cat-container .cat2, main .cat-container .cat3 
   background-size: cover;
   background-position: center;
 }
-@media screen and (max-width: 520px) {
+@media screen and (max-width: 640px) {
   main .cat-container .cat1, main .cat-container .cat2, main .cat-container .cat3 {
     height: 100%;
     width: 100%;

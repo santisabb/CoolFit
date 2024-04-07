@@ -1,4 +1,31 @@
 main{
+    .dark-mode{
+        background-color: #000;
+        p{
+            color: white;
+        }
+        h3{
+            color: white;
+        }
+        h4{
+            color: white;
+        }
+        .card-container{
+            .card{
+                background-color: #000;
+                .info-producto{
+                    .link-producto{
+                        a{
+                            color: #fff;
+                            &:hover{
+                                color: chartreuse;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
     .card-container{
         @include flex(row, space-around, center);
         flex-wrap: wrap;
