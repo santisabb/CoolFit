@@ -10,6 +10,7 @@
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
+  overflow-x: hidden;
 }
 .header-wrapper .intro {
   position: relative;
@@ -27,6 +28,11 @@
 .header-wrapper .fixed #nav-header-link {
   color: black;
 }
+@media screen and (max-width: 520px) {
+  .header-wrapper .fixed #nav-header-link {
+    color: white;
+  }
+}
 .header-wrapper .fixed .carrito {
   color: black;
 }
@@ -38,6 +44,57 @@
   width: 100%;
   padding: 1rem;
 }
+.header-wrapper .menu .logo img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+}
+.header-wrapper .menu .open-menu {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .header-wrapper .menu .open-menu {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1.25em;
+  }
+}
+.header-wrapper .menu .nav-bar .visible {
+  opacity: 1;
+  visibility: visible;
+}
+@media screen and (max-width: 520px) {
+  .header-wrapper .menu .nav-bar {
+    visibility: hidden;
+    position: fixed;
+    height: 100%;
+    z-index: 8890;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    gap: 1rem;
+    background-color: rgb(48, 48, 48);
+    padding: 2rem;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+  }
+}
+.header-wrapper .menu .nav-bar .close-menu {
+  display: none;
+}
+@media screen and (max-width: 520px) {
+  .header-wrapper .menu .nav-bar .close-menu {
+    display: block;
+    border: 0;
+    background-color: transparent;
+    color: white;
+    font-size: 1.25em;
+  }
+}
 .header-wrapper .menu .nav-bar .option-menu {
   display: flex;
   justify-content: center;
@@ -45,10 +102,14 @@
   flex-direction: row;
   gap: 1rem;
 }
-.header-wrapper .menu .nav-bar .option-menu .logo img {
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
+@media screen and (max-width: 520px) {
+  .header-wrapper .menu .nav-bar .option-menu {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    flex-direction: column;
+    color: white;
+  }
 }
 .header-wrapper .menu .nav-bar .option-menu .option {
   text-align: center;
@@ -80,6 +141,11 @@
 .header-wrapper .menu .nav-tools .tools-list .boton-dark-mode .dark-mode-logo {
   background: none;
   border-style: none;
+}
+@media screen and (max-width: 900px) {
+  .header-wrapper .menu .nav-tools .tools-list .boton-dark-mode {
+    display: none;
+  }
 }
 
 .links, .links .options {
