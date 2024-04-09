@@ -1,5 +1,4 @@
 const menuHeader = document.querySelector('.menu')
-const option = document.querySelector('#nav-header-link')
 const shopIcon = document.querySelector('#shop-icon')
 const burguerMenu = document.querySelector('#list-menu')
 const darkMode = document.querySelector('#dark-mode-logo')
@@ -11,15 +10,17 @@ function scrollEvent(sp){
     if(sp >= 600) {
         menuHeader.classList.add('fixed')
         containerHeader.style.padding = 0
-        shopIcon.style.color = 'black'
-        darkMode.style.color = 'black'
-        burguerMenu.style.color = 'black'
+        menuHeader.style.backgroundColor = 'black';
+        // shopIcon.style.color = 'black'
+        // darkMode.style.color = 'black'
+        // burguerMenu.style.color = 'black'
     }
     if(sp <= 150 && flag) {
         menuHeader.classList.remove('fixed')
-        shopIcon.style.color = 'white'
-        darkMode.style.color = 'white'
-        burguerMenu.style.color = 'white'
+        menuHeader.style.backgroundColor = 'transparent';
+        // shopIcon.style.color = 'white'
+        // darkMode.style.color = 'white'
+        // burguerMenu.style.color = 'white'
     }
 }
 
