@@ -120,8 +120,6 @@ main{
             .info-extra{
                 position: relative;
                 text-align: center;
-                // left: 100px;
-                // top: 300px;
                 @include tablet(){
                     display: none;
                 }

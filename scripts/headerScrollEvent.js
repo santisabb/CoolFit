@@ -11,16 +11,10 @@ function scrollEvent(sp){
         menuHeader.classList.add('fixed')
         containerHeader.style.padding = 0
         menuHeader.style.backgroundColor = 'black';
-        // shopIcon.style.color = 'black'
-        // darkMode.style.color = 'black'
-        // burguerMenu.style.color = 'black'
     }
     if(sp <= 150 && flag) {
         menuHeader.classList.remove('fixed')
         menuHeader.style.backgroundColor = 'transparent';
-        // shopIcon.style.color = 'white'
-        // darkMode.style.color = 'white'
-        // burguerMenu.style.color = 'white'
     }
 }
 

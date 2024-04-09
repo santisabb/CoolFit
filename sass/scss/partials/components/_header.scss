@@ -13,10 +13,8 @@
     .fixed{
         position: fixed;
         z-index: 1;
-        //background-color: white;
         box-shadow: 2px 2px 2px 1px rgba(0, 0, 0, 0.2);
         #nav-header-link{
-            //color: black;
             @include mobile(){
                 color: white;
             }
@@ -80,7 +78,6 @@
                 @include mobile(){
                     @include flex(column, center, end);
                     color: white;
-                    //color: rgb(41, 41, 41);
                 }
                 
                 .option{
