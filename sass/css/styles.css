@@ -317,13 +317,8 @@ main .cat-container .cat1:hover, main .cat-container .cat2:hover, main .cat-cont
   transition: 0.5s;
 }
 main .cat-container .cat1 .info-extra, main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
-  position: relative;
-  text-align: center;
-}
-@media screen and (max-width: 900px) {
-  main .cat-container .cat1 .info-extra, main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
-    display: none;
-  }
+  top: 50%;
+  left: 170px;
 }
 main .cat-container .cat2, main .cat-container .cat3 {
   grid-area: remeras;
@@ -336,14 +331,8 @@ main .cat-container .cat2:hover, main .cat-container .cat3:hover {
   transition: 0.5s;
 }
 main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
-  position: relative;
-  left: 0px;
-  top: 150px;
-}
-@media screen and (max-width: 900px) {
-  main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
-    display: none;
-  }
+  top: 50%;
+  left: 60px;
 }
 main .cat-container .cat3 {
   grid-area: gorros;
@@ -354,6 +343,10 @@ main .cat-container .cat3 {
 main .cat-container .cat3:hover {
   transform: scale(1.1, 1.1);
   transition: 0.5s;
+}
+main .cat-container .cat3 .info-extra {
+  top: 50%;
+  left: 90px;
 }
 main .cat-container .cat-info {
   position: relative;
@@ -371,9 +364,13 @@ main .cat-container .cat-info {
 }
 main .cat-container .info-extra {
   display: inline;
-  position: relative;
-  top: 150px;
+  position: absolute;
   color: #fff;
+}
+@media screen and (max-width: 900px) {
+  main .cat-container .info-extra {
+    display: none;
+  }
 }
 
 /*# sourceMappingURL=styles.css.map */

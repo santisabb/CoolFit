@@ -118,11 +118,8 @@ main{
                 transition: 0.5s;
             }
             .info-extra{
-                position: relative;
-                text-align: center;
-                @include tablet(){
-                    display: none;
-                }
+                top: 50%;
+                left: 170px;
             }
         }
         .cat2{
@@ -136,12 +133,8 @@ main{
                 transition: 0.5s;
             }
             .info-extra{
-                position: relative;
-                left: 0px;
-                top: 150px;
-                @include tablet(){
-                    display: none;
-                }
+                top: 50%;
+                left: 60px;
             }
         }
         .cat3{
@@ -153,6 +146,10 @@ main{
             &:hover{
                 transform: scale(1.1,1.1);
                 transition: 0.5s;
+            }
+            .info-extra{
+                top: 50%;
+                left: 90px;
             }
         }
         .cat-info{
@@ -169,9 +166,11 @@ main{
         }
         .info-extra{
             display: inline;
-            position: relative;
-            top: 150px;
+            position: absolute;
             color: #fff;
+            @include tablet(){
+                display: none;
+            }
         }
     }
 }
