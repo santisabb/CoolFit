@@ -72,7 +72,7 @@ main{
                         text-decoration: none;
                         color: black;
                         &:hover{
-                            color: blue;
+                            color: rgb(234, 11, 11);
                         }
                     }
                 }
@@ -116,11 +116,13 @@ main{
             &:hover{
                 transform: scale(1.1,1.1);
                 transition: 0.5s;
+                .info-extra{
+                    display: inline;
+                    top: 50%;
+                    left: 60px;
+                }
             }
-            .info-extra{
-                top: 50%;
-                left: 170px;
-            }
+            
         }
         .cat2{
             grid-area: remeras;
@@ -134,7 +136,7 @@ main{
             }
             .info-extra{
                 top: 50%;
-                left: 60px;
+                left: 30px;
             }
         }
         .cat3{
@@ -149,7 +151,7 @@ main{
             }
             .info-extra{
                 top: 50%;
-                left: 90px;
+                left: 40px;
             }
         }
         .cat-info{
@@ -165,8 +167,9 @@ main{
             }
         }
         .info-extra{
-            display: inline;
-            position: absolute;
+            display: none;
+            position: relative;
+            background-color: #1c1c1c;
             color: #fff;
             @include tablet(){
                 display: none;

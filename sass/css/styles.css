@@ -40,7 +40,11 @@
   width: 100%;
   padding: 1rem;
 }
-.header-wrapper .menu .logo img {
+.header-wrapper .menu .logo .logo-button:hover {
+  opacity: 0.8;
+  transition: opacity 0.5s;
+}
+.header-wrapper .menu .logo .logo-button .logo-img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
@@ -267,7 +271,7 @@ main .card-container .card .info-producto .link-producto a {
   color: black;
 }
 main .card-container .card .info-producto .link-producto a:hover {
-  color: blue;
+  color: rgb(234, 11, 11);
 }
 main .cat-container {
   height: 700px;
@@ -316,9 +320,10 @@ main .cat-container .cat1:hover, main .cat-container .cat2:hover, main .cat-cont
   transform: scale(1.1, 1.1);
   transition: 0.5s;
 }
-main .cat-container .cat1 .info-extra, main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
+main .cat-container .cat1:hover .info-extra, main .cat-container .cat2:hover .info-extra, main .cat-container .cat3:hover .info-extra {
+  display: inline;
   top: 50%;
-  left: 170px;
+  left: 60px;
 }
 main .cat-container .cat2, main .cat-container .cat3 {
   grid-area: remeras;
@@ -332,7 +337,7 @@ main .cat-container .cat2:hover, main .cat-container .cat3:hover {
 }
 main .cat-container .cat2 .info-extra, main .cat-container .cat3 .info-extra {
   top: 50%;
-  left: 60px;
+  left: 30px;
 }
 main .cat-container .cat3 {
   grid-area: gorros;
@@ -346,7 +351,7 @@ main .cat-container .cat3:hover {
 }
 main .cat-container .cat3 .info-extra {
   top: 50%;
-  left: 90px;
+  left: 40px;
 }
 main .cat-container .cat-info {
   position: relative;
@@ -363,8 +368,9 @@ main .cat-container .cat-info {
   }
 }
 main .cat-container .info-extra {
-  display: inline;
-  position: absolute;
+  display: none;
+  position: relative;
+  background-color: #1c1c1c;
   color: #fff;
 }
 @media screen and (max-width: 900px) {
