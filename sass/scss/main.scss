@@ -15,13 +15,21 @@
 
 
 //COMPONENTS
+//Header fijado
+@import 'partials/components/header-fixed';
 //Header
 @import 'partials/components/header';
+//Header pero solo se ve en el index (home o inicio)
+@import 'partials/components/index-header';
 //Footer
 @import 'partials/components/footer';
+//Card container
+@import 'partials/components/card-container';
 //Informacion de secciones en el index
 @import 'partials/components/section-info';
 //Boton de VER MAS
 @import 'partials/components/link-more-products';
 //Index
 @import 'partials/components/index';
+//Productos
+@import 'partials/components/product';

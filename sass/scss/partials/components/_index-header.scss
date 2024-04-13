@@ -1,0 +1,13 @@
+.header-wrapper{
+    width: 100%;
+    height: 750px;
+    @include background-img(url('../../assest/images/modelos-ropa4.jpg'), no-repeat, cover, center center);
+    overflow-x: hidden;
+    .intro{
+        position: relative;
+        top: 200px;
+        .text{
+            text-align: center;
+        }
+    }
+}

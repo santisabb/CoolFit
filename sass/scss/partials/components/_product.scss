@@ -1,0 +1,24 @@
+.product-wrapper{
+    height: 1500px;
+    width: 100%;
+    display: grid;
+    grid-template-areas: 
+    'img img info'
+    'img img info'
+    'other other other';
+    place-content: center;
+    @include tablet(){
+        @include flex(column, center, center);
+    }
+    .product-img{
+        grid-area: img;
+    }
+    .product-info{
+        grid-area: info;
+        width: 70%;
+    }
+    .other-products{
+        @include flex(column, center, start);
+        grid-area: other;
+    }
+}

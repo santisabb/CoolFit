@@ -1,13 +1,10 @@
 const menuHeader = document.querySelector('.menu')
-const shopIcon = document.querySelector('#shop-icon')
-const burguerMenu = document.querySelector('#list-menu')
-const darkMode = document.querySelector('#dark-mode-logo')
 const containerHeader = document.querySelector('.header-wrapper')
 let scrollPosition = 0
 let flag = false
 
 function scrollEvent(sp){
-    if(sp >= 600) {
+    if(sp >= 300) {
         menuHeader.classList.add('fixed')
         containerHeader.style.padding = 0
         menuHeader.style.backgroundColor = 'black';
@@ -18,7 +15,7 @@ function scrollEvent(sp){
     }
 }
 
-window.addEventListener('scroll', function(e){
+window.addEventListener('scroll', function(){
     scrollPosition = window.scrollY
     if(!flag){
         this.window.requestAnimationFrame(function(){
@@ -28,5 +25,7 @@ window.addEventListener('scroll', function(e){
     }
     flag = true
 })
+
+
 
 export { scrollEvent }

@@ -1,0 +1,53 @@
+.card-container{
+    @include flex(row, space-around, center);
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+    .card{
+        border-style: none;
+        margin-right: 1rem;
+        
+        @include mobile(){
+            width: 80%;
+            margin: 0 auto;
+        }
+        &:hover{
+            transform: scale(1.20,1.20);
+            transition: 0.5s;
+            .info-producto{
+                .link-producto{
+                    visibility: visible;
+                }
+            }
+        }
+        .card-img{
+            img{
+                @include img-size-card(280px, 100%);
+            }
+        }
+        .info-producto{
+            width: 100%;
+            @include flex(column, center, start);
+            .precio-producto{
+                p{
+                    margin-bottom: 0;
+                }
+            }
+            .link-producto{
+                visibility: hidden;
+                @include tablet(){
+                    visibility: visible;
+                }
+                width: 100%;
+                margin-bottom: 20px;
+                a{
+                    text-decoration: none;
+                    color: black;
+                    &:hover{
+                        color: rgb(234, 11, 11);
+                    }
+                }
+            }
+        }
+    }
+}
