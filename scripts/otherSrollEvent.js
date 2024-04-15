@@ -5,11 +5,10 @@ let flag = false
 
 
 export function otherScrollEvent(sp){
-    if(sp >= 200) {
+    if(sp >= 100) {
         otherMenu.classList.add('fixed')
-        //containerHeader.style.padding = 0
     }
-    if(sp <= 100 && flag) {
+    if(sp <= 50 && flag) {
         otherMenu.classList.remove('fixed')
     }
 }
